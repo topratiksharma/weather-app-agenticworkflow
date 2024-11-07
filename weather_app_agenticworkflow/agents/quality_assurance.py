@@ -1,4 +1,5 @@
 from crewai import Agent
+from ..ai_credential import azure_openai_client
 
 quality_assurance_agent = Agent(
 	role="Report Quality Assurance Specialist",
@@ -14,5 +15,6 @@ quality_assurance_agent = Agent(
         "is providing full"
 		"complete answers, and makes no assumptions. Make sure to double check that air quality report agent reports all the necessary sources from where the data is taken and is correct! "
 	),
-	verbose=True
+	verbose=True,
+    llm = azure_openai_client()
 )
