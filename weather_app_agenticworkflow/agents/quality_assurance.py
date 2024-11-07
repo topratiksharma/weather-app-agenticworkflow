@@ -1,5 +1,5 @@
 from crewai import Agent
-from ..ai_credential import azure_openai_client
+from ..credentials.ai_credential import azure_openai_client
 
 quality_assurance_agent = Agent(
 	role="Report Quality Assurance Specialist",

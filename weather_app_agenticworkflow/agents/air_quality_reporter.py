@@ -1,8 +1,6 @@
 from crewai import Agent
-import sys
-from ..ai_credential import azure_openai_client
+from ..credentials.ai_credential import azure_openai_client
 
-sys.path.append('/c:/Users/PSH/source/personal-workspace/weather-app-agenticworkflow/external_module')
 air_quality_report_agent = Agent(
     role="Senior air quality research and report agent",
     goal="Be a senior professional reporter "

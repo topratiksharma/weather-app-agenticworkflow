@@ -22,10 +22,9 @@ def init():
         "city": "Pune"
     }
     result = crew.kickoff(inputs=inputs)
-
+    print(result)
     Markdown(result)
 
 
 if __name__ == '__main__':
-    # init()
-    pass
+    init()
