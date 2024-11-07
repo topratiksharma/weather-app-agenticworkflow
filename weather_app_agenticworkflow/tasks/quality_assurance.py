@@ -1,4 +1,5 @@
 from crewai import Task
+from ..agents.quality_assurance import quality_assurance_agent
 
 quality_assurance_review = Task(
     description=(
@@ -18,5 +19,5 @@ quality_assurance_review = Task(
         "ready to be published as a news report.\n"
         "Please maintain a very formal tone throughout. "
     ),
-    agent=quality_assurance_agent,
+    agent=quality_assurance_agent
 )
