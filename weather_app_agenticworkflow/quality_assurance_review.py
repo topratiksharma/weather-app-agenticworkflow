@@ -1,5 +1,5 @@
 from crewai import Task
-from ..agents.quality_assurance import quality_assurance_agent
+from quality_assurance_agent import quality_assurance_agent
 
 quality_assurance_review = Task(
     description=(

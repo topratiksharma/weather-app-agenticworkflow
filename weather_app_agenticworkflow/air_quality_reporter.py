@@ -1,5 +1,5 @@
 from crewai import Agent
-from ..credentials.ai_credential import azure_openai_client
+from ai_credential import getLLM
 
 air_quality_report_agent = Agent(
     role="Senior air quality research and report agent",
@@ -16,5 +16,5 @@ air_quality_report_agent = Agent(
     ),
     allow_delegation=False,
     verbose=True,
-    llm = azure_openai_client()
+    llm = getLLM()
 )

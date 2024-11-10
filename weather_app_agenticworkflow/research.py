@@ -1,7 +1,7 @@
-from crewai import Agent, Task, Crew
+from crewai import Task
 
-from ..agents.air_quality_reporter import air_quality_report_agent
-from ..tools.doc_srape import docs_scrape_tool
+from air_quality_reporter import air_quality_report_agent
+from doc_srape import docs_scrape_tool
 
 research_task = Task(
     description=(
