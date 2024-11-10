@@ -1,5 +1,5 @@
 from crewai import Agent
-from ai_credential import getLLM
+from llm import getLLM
 
 air_quality_report_agent = Agent(
     role="Senior air quality research and report agent",

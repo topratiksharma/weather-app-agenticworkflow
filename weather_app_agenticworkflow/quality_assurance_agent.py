@@ -1,5 +1,5 @@
 from crewai import Agent
-from ai_credential import getLLM
+from llm import getLLM
 
 quality_assurance_agent = Agent(
 	role="Report Quality Assurance Specialist",
